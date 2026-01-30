@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagani company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/pagani.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pagani - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Pagani hauyra roadstar-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Pagani/huayra/h1.png" alt="Hautra Roadstar">
+            <div class="model-details">
+                <h2>Pagani Hauyra Roadstar</h2>
+                <p><strong>Price:</strong> $616.9 million </p>
+                <p><strong>Engine Type:</strong>6.0 L (5,980 cc) twin-turbocharged M158 60° V12 engine developed by Mercedes-AMG </p>
+                <p><strong>Power:</strong> 740 HP</p>
+                <p><strong>Torque:</strong> 1000 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>An active aerodynamics system with four flaps that can be controlled independently</li>
+                        <li>Carbon fiber bodywork, sweeping lines, and an aggressive stance</li>
+                        <li>made from carbon-titanium HP62</li>
+                        <li>top speed is 370 km/hr </li>
+                        <li>Digital Touchscreen Infotaiment Screen </li>
+                        <li>cruise control, anti braking system, reverse camera</li>
+                        <li>7 speed manual gearbox</li>
+                        <li>Rear wheel drive </li>
+                        <li>0-100 in 3.1 seconds </li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Car Model 1', 25000)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- pagani imola roadstar --> 
+             <div class="container">
+            <div class="model">
+                <img src="" alt="Pagani Imola Roadstar">
+                <div class="model-details">
+                    <h2>Pagani imola roadstar</h2>
+                    <p><strong>Price:</strong> $1.40 billion </p>
+                    <p><strong>Engine Type:</strong> Mercedes-AMG V12, 6.0-liter twin-turbo engine </p>
+                    <p><strong>Power:</strong> 850</p>
+                    <p><strong>Torque:</strong> 1100 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>0 – 100 – 0 km/h 4.8 sec </li>
+                            <li>A seven-speed sequential gearbox </li>
+                            <li>fuel tank 100L</li>
+                            <li>Top speed is 349 km/hr </li>
+                            <li>Brembo's ventilated carbon ceramic brakes</li>
+                            <li>automatic climate control</li>
+                            <li>A six-pipe exhaust system made from titanium and coated with ceramic </li>
+                            <li>Redirects air into the engine to maintain its temperature</li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Car Model 1', 25000)">Add to Cart</button>
+                </div>
+            </div>
+            <!--Pagani utopia -->
+            <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Pagani/utopia/pu1.png" alt="Utopia">
+            <div class="model-details">
+                <h2>Pagani Utopia </h2>
+                <p><strong>Price:</strong> $190 million </p>
+                <p><strong>Engine Type:</strong>6-liter twin-turbocharged AMG V12 engine</p>
+                <p><strong>Power:</strong> 852 HP</p>
+                <p><strong>Torque:</strong> 811 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                       <li>Top speed is 349 km/hr</li>
+                       <li>mobile sculpture or rolling artwork</li>
+                       <li>0 - 100 in 3.4 seconds </li>
+                       <li>It is made up of carbon and titanium</li>
+                       <li>Active aerodynamic elements with adjustable rear wing</li>
+                       <li>carbon-ceramic brakes</li>
+                       <li>Quad titanium exhaust system</li>
+                       <li>Premium leather and carbon fiber</li>
+                       <li>Electronically controlled active aerodynamics</li>
+                       <li>High-definition touchscreen with premium sound system</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Car Model 1', 25000)">Add to Cart</button>
+            </div>
+        </div>
+<!-- pagani utopia roadstar-->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Pagani/utopiaRoadstar/pur.png" alt="Utopia roadstar">
+        <div class="model-details">
+            <h2>pagani utopia Roadstar</h2>
+            <p><strong>Price:</strong> $280.7 million </p>
+            <p><strong>Engine Type:</strong>Mercedes-AMG M158 6.0-liter twin-turbo V12 engine</p>
+            <p><strong>Power:</strong> 863 HP</p>
+            <p><strong>Torque:</strong> 1100 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Top speed is 378 km/hr </li>
+                    <li>7-speed automated manual gearbox</li>
+                    <li>0 -100 in 3.2 seconds </li>
+                    <li>Active aerodynamics with movable flaps</li>
+                    <li>Carbon-ceramic brakes</li>
+                    <li>Titanium exhaust system</li>
+                    <li>Leather, carbon fiber, and aluminum interior</li>
+                    <li>Custom Pagani infotainment with premium audio</li>
+                    <li>Active rear spoiler and front splitters</li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Car Model 1', 25000)">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

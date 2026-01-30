@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range rover company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/rangeRover.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Range Rover Company - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Range rover evoque -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/rangeRover/evoque/er1.png" alt="evoque">
+            <div class="model-details">
+                <h2> Range Rover evoque </h2>
+                <p><strong>Price:</strong> $100000 </p>
+                <p><strong>Engine Type:</strong>2.0-liter turbocharged four-cylinder engine  </p>
+                <p><strong>Power:</strong> 247 HP</p>
+                <p><strong>Torque:</strong> 369 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>fuel capacity is 67 -liters</li>
+                        <li>ground clearence is 212mm</li>
+                        <li>power steering</li>
+                        <li>top speed is 221 km/hr </li>
+                        <li>anti clock braking system </li>
+                        <li>0-60 in 6.5 seconds </li>
+                        <li>10 airbags are available</li>
+                        <li>multi function steering wheel</li>
+                        <li>air quality control</li>
+                        <li>keyless control</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('range rover evoque', $100000)">Add to Cart</button>
+            </div>
+        </div>
+        <!--range rover velar  --> 
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/rangeRover/valar/rv2.png" alt="velar">
+                <div class="model-details">
+                    <h2>Range Rover Velar</h2>
+                    <p><strong>Price:</strong> $84795 </p>
+                    <p><strong>Engine Type:</strong>5.0L supercharged V8 (SVAutobiography Dynamic)</p>
+                    <p><strong>Power:</strong> 550 Hp</p>
+                    <p><strong>Torque:</strong> 680 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>0 – 60 5.8 seconds </li>
+                            <li>top speed is 210 km/hr</li>
+                            <li>8 gears automatic transmittion </li>
+                            <li>Rear wheel drive </li>
+                            <li>electric steering wheel, adjustable steering </li>
+                            <li>Electric ventilated seats, adjustable steering </li>
+                            <li>Remote control fuel and trunk opener</li>
+                            <li>smart access key card</li>
+                            <li>key less entry</li>
+                            <li>for safety 6 airbags are available</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('range rover velar', $84795)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--range rover sport  --> 
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/rangeRover/Sport/rs1.png" alt="sport">
+                <div class="model-details">
+                    <h2>Range Rover Sport</h2>
+                    <p><strong>Price:</strong> $180300 </p>
+                    <p><strong>Engine Type:</strong>5.0-litre supercharged V8</p>
+                    <p><strong>Power:</strong> 423 Hp</p>
+                    <p><strong>Torque:</strong> 700 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>0 – 100 in 5 seconds </li>
+                            <li>top speed is 225 km/hr</li>
+                            <li>8 gears manual transmittion </li>
+                            <li>Rear wheel drive </li>
+                            <li>multi functional steering wheel, Ajustable steering </li>
+                            <li>voice control </li>
+                            <li>luagge hook and cup holder</li>
+                            <li>dual tone dashboard</li>
+                            <li>electrical adjustable seats</li>
+                            <li>front and rear air suspension</li>
+                            <li> for safety 6 airbags are available</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('range rover sport', $180300)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>&copy; 2024 Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

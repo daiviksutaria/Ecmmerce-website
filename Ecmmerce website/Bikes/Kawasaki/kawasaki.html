@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawasaki Model Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Ducati.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kawasaki bike - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Kawasaki H2SXSE -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/H2SXSE/h23.png" alt="H2SXSE">
+            <div class="model-details">
+                <h2>Kawasaki H2SXSE</h2>
+                <p><strong>Price:</strong> $28000</p>
+                <p><strong>Engine Type:</strong>998 cc, liquid-cooled, 4-stroke, DOHC, 16-valve inline-four with supercharger engine </p>
+                <p><strong>Power:</strong> 147 HP</p>
+                <p><strong>Torque:</strong> 137 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0-100 in 3.1 seconds </li>
+                        <li>Top speed is 270 km/hr </li>
+                        <li>Transmission: 6-speed, return shift with Kawasaki Quick Shifter (KQS) for up and down shifts</li>
+                        <li>Suspension: front: Fully adjustable 50 mm USD fork   rear: Fully adjustable monoshock</li>
+                        <li>Controls: Traction control, launch control, cruise control</li>
+                        <li>Frame Material: High-tensile steel trellis frame designed for high-speed stability and handling</li>
+                        <li>Seat Type: Sport-touring seat designed for comfort on long rides, accommodating both rider and passenger</li>
+                        <li>Lighting: All-LED lighting system, including cornering lights for enhanced visibility in turns</li>
+                        <li>Bodywork: Integrated winglets for stability and aggressive design</li>
+                        <li>Traction control:Kawasaki Traction Control (KTRC) with multiple modes</li>
+                        <li>Riding models: ntegrated riding modes (Sport, Road, Rain, Rider)</li>
+                        <li>ABS: Kawasaki Intelligent anti-lock Brake System (KIBS) with cornering management function</li> 
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Kawasaki H2SXSE', $28000)">Add to Cart</button>
+            </div>
+        </div>
+<!--kawasaki SXH2-->
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/SXh2/h21.png" alt="SXH2">
+                <div class="model-details">
+                    <h2>kawasaki SXH2</h2>
+                    <p><strong>Price:</strong> $28000</p>
+                    <p><strong>Engine Type:</strong>998 cc, liquid-cooled, 4-stroke, DOHC, 16-valve inline-four with supercharger engine </p>
+                    <p><strong>Power:</strong> 147 HP</p>
+                    <p><strong>Torque:</strong> 137 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            
+                            <li>0-100 in 3.1 seconds </li>
+                            <li>Top speed is 299 km/hr </li>
+                            <li>Transmission:  6-speed, return shift with Kawasaki Quick Shifter (KQS) for clutchless up and downshifts</li>
+                            <li>Suspension: front: 43 mm Showa BFF fork, fully adjustable rear: Showa BFRC lite, fully adjustable Suspension</li>
+                            <li>Controls: Quick shifter, traction control, multiple ride modes</li>
+                            <li>Frame Material: High-tensile steel trellis frame for rigidity and stability at high speeds</li>
+                            <li>Seat Type: Sport-touring seat designed for comfort on long rides, accommodating both rider and passenger</li>
+                            <li>Lighting: Full LED lighting system, including cornering lights for enhanced visibility during night riding or in low-light conditions</li>
+                            <li>Bodywork: Integrated winglets for stability and aggressive design</li>
+                            <li>Storage: Limited storage, compatible with accessory luggage option</li>
+                            <li>Traction control: Kawasaki Traction Control (KTRC) with multiple modes</li>
+                            <li>Riding models: Three integrated riding modes (Sport, Road, Rain) </li>
+                            <li>ABS: Kawasaki Intelligent anti-lock Brake System (KIBS) with cornering management function</li> 
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Kawasaki SXH2', $28000)">Add to Cart</button>
+                </div>
+            </div>
+<!--kawasaki z650-->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/Z650/z6501.png" alt="Z650">
+                    <div class="model-details">
+                        <h2>Kawasaki Z650</h2>
+                        <p><strong>Price:</strong> $8000</p>
+                        <p><strong>Engine Type:</strong> 649 cc, liquid-cooled, 4-stroke, DOHC, parallel-twin engine </p>
+                        <p><strong>Power:</strong> 67 HP</p>
+                        <p><strong>Torque:</strong> 45 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 4.5 seconds </li>
+                                <li>Top speed is 200 km/hr </li>
+                                <li>Transmission:  6-speed, return shift</li>
+                                <li>Suspension: front: 41 mm telescopic fork rear: orizontal back-link, preload-adjustable shock</li>
+                                <li>Controls: Low, comfortable seat suitable for both the rider and a passenger, offering a more upright and relaxed riding position</li>
+                                <li>Frame Material: High-tensile steel trellis frame for a lightweight and agile handling feel</li>
+                                <li>Seat Type: Low ,comfortable seat suitable for both the rider and a passenger, offering a more upright and relaxed riding position</li>
+                                <li>Lighting:Full LED headlight, taillight, and turn signals for improved visibility and a modern appearance</li>
+                                <li>Bodywork: Integrated winglets for stability and aggressive design</li>
+                                <li>Storage: Limited storage, compatible with accessory luggage option</li>
+                                <li>Traction control: Full-color TFT with Rideology app, showing speed, gear, fuel, data</li>
+                                <li>Riding models: he Z650 does not feature multiple riding modes, focusing on simplicity and rider engagement </li>
+                                <li>ABS: Standard dual-channel ABS for safe and controlled braking</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Kawasaki Z650', $8000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Kawasaki Z1000R -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/Z1000R/zr1.png" alt="Z 1000 R">
+                    <div class="model-details">
+                        <h2>Kawasaki Z 1000 R</h2>
+                        <p><strong>Price:</strong> $14000</p>
+                        <p><strong>Engine Type:</strong>1,043 cc, liquid-cooled, 4-stroke, DOHC, inline-four engine </p>
+                        <p><strong>Power:</strong> 142 HP</p>
+                        <p><strong>Torque:</strong> 112 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 3.2 seconds </li>
+                                <li>Top speed is 241 km/hr </li>
+                                <li>Transmission:  6-speed, return shift</li>
+                                <li>Suspension: Front: 41 mm Showa SFF-BP fork, fully adjustable rear: orizontal back-link, preload-adjustable shock</li>
+                                <li>Controls: Low, comfortable seat suitable for both the rider and a passenger, offering a more upright and relaxed riding position</li>
+                                <li>Frame Material: High-tensile steel trellis frame for a lightweight and agile handling feel</li>
+                                <li>Seat Type: Sporty seat, aggressive position, cushioned comfort</li>
+                                <li>Lighting: Full LED headlight, taillight, and turn signals for modern aesthetics and improved visibility</li>
+                                <li>Bodywork: Sugomi styling: sharp lines, muscular, minimalistic</li>
+                                <li>Storage: Minimal storage space, typical for naked sport bikes; limited under-seat storage for small items</li>
+                                <li>Traction control: Full-color TFT with Rideology app, showing speed, gear, fuel, data</li>
+                                <li>Riding models: Does not feature multiple riding modes</li>
+                                <li>ABS: KTRC, multi-level traction control for safety"</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Kawasaki Z 1000 R', $14000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Kawasaki ZX65-->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/ZX65/zx1.png" alt="ZX65">
+                    <div class="model-details">
+                        <h2>Kawasaki ZX 65</h2>
+                        <p><strong>Price:</strong> $11000</p>
+                        <p><strong>Engine Type:</strong> 636 cc, liquid-cooled, 4-stroke, DOHC, inline-four Engine</p>
+                        <p><strong>Power:</strong> 134 HP</p>
+                        <p><strong>Torque:</strong> 71 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                               <li>0-100 in 3.2 seconds </li>
+                                <li>Top speed is 257 km/hr </li>
+                                <li>Transmission:  6-speed, return shift</li>
+                                <li>Suspension: Front: 41 mm Showa, fully adjustable rear: Uni-Trak shock, fully adjustable</li>
+                                <li>Controls: Adjustable controls for precise, responsive handling</li>
+                                <li>Frame Material: Aluminum perimeter frame designed for high rigidity and nimble handling</li>
+                                <li>Seat Type: Aggressive seat, cushioned for medium rides</li>
+                                <li>Lighting: LED headlights, taillight, and turn signals for modern aesthetics and improved visibility</li>
+                                <li>Bodywork: Aggressive, aerodynamic fairings with sharp design</li>
+                                <li>Storage: Minimal storage, limited under-seat space for items</li>
+                                <li>Traction control: Advanced traction control with multiple settings</li>
+                                <li>Riding models: Does not feature multiple riding modes</li>
+                                <li>ABS: KIBS ensures precise, controlled high-speed braking</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Kawasaki ZX65', $11000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <p>&copy; 2024 Bike Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce with Shopping Cart and Payment</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .product-list, .featured {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(50% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+        .cart {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(50% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .cart h2 {
+            margin-bottom: 10px;
+        }
+
+        .cart-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-items li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-items li span {
+            display: block;
+        }
+
+        .cart-items li button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .cart-items li button:hover {
+            background-color: #c0392b;
+        }
+
+        .cart-total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .payment {
+            margin-top: 20px;
+        }
+
+        .payment form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .payment form button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .payment form button:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vehicle Store</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Cars</h2>
+        <section class="product-list">
+            <div class="product">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/specialCars/lamborginiVenenoRoadstar/lvr1.png" alt="Lamorghini Veneno Roadstar">
+                <h3><a href="product-details.html?product=audi-r8">Lamborghini Veneno RoadStar</a></h3>
+                <p>$900 million </p>
+            </div>
+            <div class="product">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/specialCars/laRoseNoireDroptail/rrl1.png" alt="Royle Rolls La Noire Droptail">
+                <h3><a href="product-details.html?product=audi-r8">Rolls Royle La Noire Droptail</a></h3>
+                <p>$1 billion</p>
+            <!-- Add more products here -->
+        </section>
+
+        <h2>Your Shopping Cart</h2>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items" class="cart-items"></ul>
+            <p id="cart-total" class="cart-total">Total: $0</p>
+        </div>
+
+        <div class="payment">
+            <h2>Payment Information</h2>
+            <form id="payment-form" onsubmit="processPayment(event)">
+                <input type="text" id="card-name" placeholder="Name on Card" required>
+                <input type="text" id="card-number" placeholder="Card Number" required>
+                <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                <input type="text" id="card-cvc" placeholder="CVC" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Store</p>
+    </footer>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(productName, price) {
+            const product = { name: productName, price: price };
+            cart.push(product);
+            total += price;
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotal = document.getElementById('cart-total');
+
+            cartItems.innerHTML = '';
+            cart.forEach((product, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span>${product.name}</span><span>$${product.price.toFixed(2)}</span>
+                <button onclick="removeFromCart(${index})">Remove</button>`;
+                cartItems.appendChild(li);
+            });
+
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        function removeFromCart(index) {
+            total -= cart[index].price;
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function processPayment(event) {
+            event.preventDefault();
+            const name = document.getElementById('card-name').value;
+            const number = document.getElementById('card-number').value;
+            const expiry = document.getElementById('card-expiry').value;
+            const cvc = document.getElementById('card-cvc').value;
+
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
+            if (validateCardDetails(name, number, expiry, cvc)) {
+                alert(`Payment of $${total.toFixed(2)} was successful! Thank you for your purchase.`);
+                clearCart();
+            } else {
+                alert('Invalid payment details. Please check your information and try again.');
+            }
+        }
+
+        function validateCardDetails(name, number, expiry, cvc) {
+            // Basic validation (for demonstration purposes only)
+            if (name.length < 3 || number.length !== 16 || expiry.length !== 5 || cvc.length !== 3) {
+                return false;
+            }
+            return true;
+        }
+
+        function clearCart() {
+            cart = [];
+            total = 0;
+            updateCart();
+            document.getElementById('payment-form').reset();
+        }
+    </script>
+</body>
+
+</html>

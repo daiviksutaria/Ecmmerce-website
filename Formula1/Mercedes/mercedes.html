@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 - Company Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/formula1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        .model-details {
+            flex: 2;
+            color: #ddd;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mercedes Formula 1 - Company Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="f1-cars.html">F1 Cars</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Mercedes/m1.png" alt="mercedes F1 Car Model 1">
+            <div class="model-details">
+                <h2>mercedes F1 Car Model 1</h2>
+                <p><strong>Price:</strong> $16 million</p>
+                <p><strong>Engine Type:</strong> Mercedes-AMG F1 M14 E Performance</p>
+                <p><strong>Power:</strong> 1000 HP</p>
+                <p><strong>Torque:</strong> 700 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0 - 100 in 2.6 seconds</li>
+                        <li>Top speed is 350 km/hr</li>
+                        <li>Transmission: 8-speed semi-automatic gearbox</li>
+                        <li>Braking System: Advanced carbon-carbon disc brakes with brake-by-wire technology</li>
+                        <li>Chassis: Carbon fiber monocoque structure for maximum rigidity and safety</li>
+                        <li>Body Material: Primarily carbon fiber composite materials, with additional use of Kevlar and other lightweight, strong materials</li>
+                        
+                        <h3>Formula1 drivers suit:</h3>
+
+                        <li>Material: Nomex, with additional layers of fire-resistant materials</li>
+                        <li>Weight: Typically around 1.5-2 kg (3.3-4.4 lbs)</li>
+                        <li>Design: Ergonomically designed for flexibility and comfort, multi-layered for enhanced protection</li>
+                        <li>Ventilation: Strategic ventilation zones and mesh inserts to improve air circulation and cooling</li>
+                        <li>Certification: FIA standard 8856-2018, ensuring compliance with the latest safety and fire resistance standards</li>
+                        <li>Fire Resistance: Designed to withstand exposure to flames and extreme heat, capable of protecting against temperatures up to 1,000°C (1,832°F) for at least 10 seconds</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('mercedes Car Model 1', 16000000)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Formula 1 Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Model Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Suzuki.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Special bike - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Ducati Diavel 1260 Lamborghini -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Special/DiavelLamboMY2101/dl01.jpg" alt="Ducati Diavel 1260 Lamborghini">
+            <div class="model-details">
+                <h2>Ducati Diavel 1260 Lamborghini</h2>
+                <p><strong>Price:</strong> $31995 </p>
+                <p><strong>Engine Type:</strong>1262 cc Ducati Testastretta DVT engine</p>
+                <p><strong>Power:</strong> 160 HP</p>
+                <p><strong>Torque:</strong> 129 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0-100 in 2.5 seconds </li>
+                        <li>Top speed is 273 km/hr </li>
+                        <li>Transmission: 6-speed manual with Ducati Quick Shift (DQS) up/down system</li>
+                        <li>Suspension: front: 48 mm Öhlins fully adjustable forks   rear: Öhlins adjustable monoshock with swingarm</li>
+                        <li>Controls: Advanced traction control and custom riding modes</li>
+                        <li>Frame Material: Steel trellis frame with aluminum side plates</li>
+                        <li>Seat Type: Sporty single-piece seat with Lamborghini stitching.</li>
+                        <li>Lighting: LED lights for modern styling, visibility</li>
+                        <li>Bodywork: Lamborghini-inspired design with carbon fiber components</li>
+                        <li>Traction control: No advanced traction control; straightforward riding experience</li>
+                        <li>Riding models: No multiple riding modes; engaging riding experience</li>
+                        <li>ABS: Bosch ABS, rear ABS can be switched off</li> 
+                        <li>Limited Edition: This model is a limited production, making it a highly exclusive and collectible motorcycle.</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('KTM 390 Duke', $7000)">Add to Cart</button>
+            </div>
+        </div>
+<!--ktm brabus 1300 r-->
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/brabus1300Rmasterpeiceedition/bme1.png" alt="Brabus 1300 R">
+                <div class="model-details">
+                    <h2>KTM Brabus 1300 R</h2>
+                    <p><strong>Price:</strong> $60000</p>
+                    <p><strong>Engine Type:</strong>1,301 cc, liquid-cooled, 4-stroke, V-twin engine </p>
+                    <p><strong>Power:</strong> 180 HP</p>
+                    <p><strong>Torque:</strong> 190 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            
+                            <li>0-100 in 3.5 seconds </li>
+                            <li>Top speed is 250 km/hr </li>
+                            <li>Transmission:  6-speed, return shift </li>
+                            <li>Suspension: front: 48 mm WP Apex Pro fork, adjustable  rear: WP Apex Pro shock, adjustable settings</li>
+                            <li>Controls: Advanced control systems for enhanced riding performance</li>
+                            <li>Frame Material: Lightweight, high-strength steel trellis frame</li>
+                            <li>Seat Type: Luxurious, ergonomic seat with high-quality materials</li>
+                            <li>Lighting: Full LED system for modern styling, visibility</li>
+                            <li>Bodywork: Custom Brabus design, carbon fiber accents</li>
+                            <li>Storage: Limited storage, focused on performance and aesthetics</li>
+                            <li>Traction control: Advanced traction control for stability and control</li>
+                            <li>Riding models: Multiple riding modes with adjustable settings</li>
+                            <li>ABS: High-performance ABS for optimal braking safety</li> 
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('KTM Brabus 1300 R', $60000)">Add to Cart</button>
+                </div>
+            </div>
+<!--ktm rc 390 -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/Rc390/rc1.png" alt="RC 390">
+                    <div class="model-details">
+                        <h2>KTM RC 390</h2>
+                        <p><strong>Price:</strong> $8000</p>
+                        <p><strong>Engine Type:</strong>373 cc, liquid-cooled, 4-stroke, DOHC, single-cylinder engine </p>
+                        <p><strong>Power:</strong> 43 HP</p>
+                        <p><strong>Torque:</strong> 37 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 5.5 seconds </li>
+                                <li>Top speed is 160 km/hr </li>
+                                <li>Transmission:  6-speed, return shift</li>
+                                <li>Suspension: front: 43 mm WP Apex fork, fully adjustable  rear: WP Apex shock, adjustable for preload, rebound</li>
+                                <li>Controls: Rider aids include traction control and ABS</li>
+                                <li>Frame Material: High-tensile steel trellis frame for rigidity</li>
+                                <li>Seat Type: Sporty seat, race-inspired, supports high-speed riding</li>
+                                <li>Lighting: Full LED lights for modern styling, visibility</li>
+                                <li>Bodywork: Aggressive fairings, streamlined, aerodynamic front end</li>
+                                <li>Storage: Minimal storage; performance-focused with limited space</li>
+                                <li>Traction control: No advanced traction control; sport-oriented experience</li>
+                                <li>Riding models: No multiple modes; </li>
+                                <li>ABS: Standard Bosch ABS for safe and controlled braking</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Kawasaki Z650', $8000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Ktm xbow gt xr  -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/Xbow%20gtxr/gtxr1.png" alt="Xbow GT XR ">
+                    <div class="model-details">
+                        <h2>Ktm Xbow GT XR  </h2>
+                        <p><strong>Price:</strong> $300000</p>
+                        <p><strong>Engine Type:</strong>2.5-liter, turbocharged inline-five engine </p>
+                        <p><strong>Power:</strong> 523 HP</p>
+                        <p><strong>Torque:</strong> 700 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 3.4 seconds </li>
+                                <li>Top speed is 300 km/hr </li>
+                                <li>Transmission:  7-speed dual-clutch transmission (DCT)</li>
+                                <li>Instrument cluster: Digital display with telemetry, customizable for performance metrics</li>
+                                <li>Seating congiguration: Two-seater with a low, sports-oriented driving position</li>
+                                <li>Controls: Low, comfortable seat suitable for both the rider and a passenger, offering a more upright and relaxed riding position</li>
+                                <li>Frame Material: Carbon fiber monocoque chassis for lightweight rigidity</li>
+                                <li>Seat Type: Bucket racing seats with multi-point harnesses for security</li>
+                                <li>Lighting: LED headlights and taillights for visibility and styling</li>
+                                <li>Bodywork: Carbon fiber panels with aerodynamic elements, including splitter</li>
+                                <li>Storage: Minimal storage space, typical for naked sport bikes; limited under-seat storage for small items</li>
+                                <li>Traction control:Advanced traction control system for stability and control</li>
+                                <li>Riding models: Multiple modes adjust dynamics for track and road.</li>
+                                <li>ABS: High-performance ABS for track and high-speed driving</li> 
+                                <li>aerodynamic: Adjustable rear wing and splitter for customizable aerodynamics</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('KTM Xbow GT XR', $300000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <p>&copy; 2024 Bike Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

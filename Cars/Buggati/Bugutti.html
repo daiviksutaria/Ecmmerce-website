@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/bugatti.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bugatti Company - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- bugatti bolide-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/bolide/bb7.png" alt="Bolide">
+            <div class="model-details">
+                <h2>Bugatti bolide </h2>
+                <p><strong>Price:</strong> $360 million </p>
+                <p><strong>Engine Type:</strong>8.0 litre W16 engine </p>
+                <p><strong>Power:</strong> 1825 HP</p>
+                <p><strong>Torque:</strong> 1364 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Carbon fiber monocoque</li>
+                        <li>Titanium components</li>
+                        <li>power steering system</li>
+                        <li>carbon coated rims</li>
+                        <li>Multi-function Steering Wheel</li>
+                        <li>0-100 in 2.2 seconds </li>
+                        <li>0-500 in 20.1 seconds</li>
+                        <li>0–401–0 km/h in 24.62 seconds </li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Bugatti bolide', $360000000)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- bugguti chiron super sport 300+ --> 
+             <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/chiron%20super%20sport%20300+/bc1.png" alt="Bugatti chiron super sport 300+">
+                <div class="model-details">
+                    <h2>bugatti chiron super sport 300+</h2>
+                    <p><strong>Price:</strong> $280 million </p>
+                    <p><strong>Engine Type:</strong> W16 engine </p>
+                    <p><strong>Power:</strong> 1600 HP at 7000 rpm</p>
+                    <p><strong>Torque:</strong> 1600 Nm at 7000 rpm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>0 – 100 – 0 km/h 4.8 sec </li>
+                            <li>7 gear manual transmission</li>
+                            <li>fuel tank 100L</li>
+                            <li>Top speed is 490 km/hr </li>
+                            <li>Power sterring</li>
+                            <li>automatic climate control</li>
+                            <li>Titanium brakes </li>
+                            <li>Navigation systems</li>
+                            <li>parking sensors</li>
+                            <li>Smart Access Card Entry</li>
+                            <li>Key less entry</li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Bugatti chiron super sport 300+', 280000000)">Add to Cart</button>
+                </div>
+            </div>
+            <!--Bugatti divo-->
+            <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/Divo/bd2.png" alt="Divo">
+            <div class="model-details">
+                <h2>Bugatti divo </h2>
+                <p><strong>Price:</strong> $410 million </p>
+                <p><strong>Engine Type:</strong>8.0 L quad-turbocharged W16 </p>
+                <p><strong>Power:</strong> 1500 HP</p>
+                <p><strong>Torque:</strong> 1600 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                       <li>Top speed is 379 km/hr</li>
+                       <li>body martial is carbon fiber</li>
+                       <li>Fuel tank is 100L</li>
+                       <li>Power Steering</li>
+                       <li>Smart access card entry</li>
+                       <li>digital clock</li>
+                       <li>dual tone dhashboard</li>
+                       <li>rear spolier</li>
+                       <li>Central locking</li>
+                       <li>Radio</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Bugatti Divo', 410000000)">Add to Cart</button>
+            </div>
+        </div>
+<!-- bugatti tourbillon-->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/Trubillon/bt1.png" alt="tourbillon">
+        <div class="model-details">
+            <h2>Bugatti tourbillon </h2>
+            <p><strong>Price:</strong> $325.9 million </p>
+            <p><strong>Engine Type:</strong>8.3-liter naturally aspirated V16 engine </p>
+            <p><strong>Power:</strong> 986 HP</p>
+            <p><strong>Torque:</strong> 900 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>instrument console is fixed and made up of titanimum</li>
+                    <li>8-speed longitudinal DCT</li>
+                    <li>Top speed is 380km/hr</li>
+                    <li>carbon coated rims</li>
+                    <li>Multi-function Steering Wheel</li>
+                    <li>0-100 in 2 seconds </li>
+                    <li>0-400 less than 25 seconds</li>
+                    <li>battery of 800 V </li>
+                    <li>battery output 600 KW</li>
+                    <li>Electic motor of 250KW</li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Bugatti tourbillon', 32590000000)">Add to Cart</button>
+        </div>
+    </div>
+
+<!-- Bugatti centrocedi-->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/Centrocedi/bc1.png" alt="Centrocedi">
+        <div class="model-details">
+            <h2>Bugatti centrocedi-- </h2>
+            <p><strong>Price:</strong> $610 million </p>
+            <p><strong>Engine Type:</strong>8.0-litre quad-turbo W16 </p>
+            <p><strong>Power:</strong> 1578.1 HP</p>
+            <p><strong>Torque:</strong> 1600 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Top speed is 420 km/hr</li>
+                    <li>8-speed longitudinal DCT</li>
+                    <li>Top speed is 380km/hr</li>
+                    <li>7 Speed Automatic (DCT) Gear Box</li>
+                    <li>0 to 100 km/h in 2.4 sec</li>
+                    <li>Fuel Tank Capacity	100 L</li>
+                    <li>total weight is 1995kg</li>
+                    <li>Keyless entry </li>
+                    <li>Steering Features	3-Spoke, Flat Bottom, Paddle Shifters, Leather Wrapped</li>
+                    <li>Bluetooh, usb port</li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Bugatti centrocedi', 610000000)">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

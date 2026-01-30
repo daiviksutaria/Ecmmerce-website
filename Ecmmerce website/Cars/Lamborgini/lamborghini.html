@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborgini Company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/lambo.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 10%;
+        }
+
+        .model-details h2 {
+            margin-bottom: 20px;
+        }
+
+        .model-details p {
+            margin-bottom: 20px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lamborgini - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Lamborgini countach LPI 800-H-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/countach%20LPI%20800-H/-lc3.png" alt="countach LPI 800-H"></div>
+            <div class="model-details">
+               <h2>Lamborgini countach LPI 800-H </h2>
+                <p><strong>Price:</strong> $250 million </p>
+                <p><strong>Engine Type:</strong>6.5-liter, naturally aspirated V12 engine with a 34-CV electric motor  </p>
+                <p><strong>Electic motor:</strong>48V motor, power=34CV and torque=35Nm</p>
+                <p><strong>Power:</strong> 814 HP</p>
+                <p><strong>Torque:</strong> 720 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Full carbon fiber body</li>
+                        <li>Lamborghini Dynamic Steering with variable steering ratio</li>
+                        <li>Electronic control all wheel drive transmission </li>
+                        <li>7 gears automatic transmission</li>
+                        <li>Top Speed is 355km/hr</li>
+                        <li>0-100 in 2.8 seconds </li>
+                        <li>total wieght is 1595kg </li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Lamborgini countach LPI 800-H', 25000)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- lamborgini Huracán EVO Spyder --> 
+             <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/huracen/lh8.png" alt="lamborgini Huracán EVO Spyder"></div>
+                <div class="model-details">
+                    <h2>lamborgini Huracán EVO Spyder</h2>
+                    <p><strong>Price:</strong> $41 million </p>
+                    <p><strong>Engine Type:</strong> 5.2-litre naturally-aspirated V10 </p>
+                    <p><strong>Power:</strong> 600 HP</p>
+                    <p><strong>Torque:</strong> 640 Nm </p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>All-wheel drive with electronically controlled hydraulic multi-plate clutch</li>
+                            <li>7-speed Lamborghini Doppia Frizione (LDF) dual-clutch transmission</li>
+                            <li>Top speed is 325km/hr</li>
+                            <li>0-100 in 3.1 seconds  </li>
+                            <li>full body is made up of carbon fiber and aluminium</li>
+                            <li>6 airbags are available </li>
+                            <li>Carbon-ceramic brakes with fixed monoblock calipers with 6 pistons (front) and 4 pistons (rear), in aluminum, CCB disks </li>
+                            <li>ESC integrating ABS and TCS with different characteristics according to the driving mode selected</li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Car Model 1', 25000)">Add to Cart</button>
+                </div>
+            </div>
+            <!--Lamborgini Revuelto-->
+            <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/revetto/lr1.png" alt="Revuelto"></div>
+            <div class="model-details">
+                <h2>lamborgini Revuelto </h2>
+                <p><strong>Price:</strong> $88.9 million </p>
+                <p><strong>Engine Type:</strong>6.5-litre NA V12 engine with three electric motors and a 3.8kWh battery pack. </p>
+                <p><strong>Power:</strong> 1025 HP</p>
+                <p><strong>Torque:</strong> 725 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                       <li>8 gears transmission gearbox</li>
+                       <li>top speed is 350 km/hr</li>
+                       <li>0-100 in 2.5 seconds</li>
+                       <li>full carbon fiber body and aluminium doors</li>
+                       <li>Touch screen control</li>
+                       <li>standard ADAS is available</li>
+                       <li>alexa is inbuilt</li>
+                       <li>vehichle information</li>
+                       <li>car tracker is inbulit</li>
+                       <li>protective firm and sterring wheel cover is available</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Lamborgini Revuelto  ', 25000)">Add to Cart</button>
+            </div>
+        </div>
+<!-- lamborgini sian-->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/sian/ls2.png" alt="sian" width="800%"></div>
+        <div class="model-details">
+            <h2>lamborgini sian</h2>
+            <p><strong>Price:</strong> $325 million </p>
+            <p><strong>Engine Type:</strong>V12 engine </p>
+            <p><strong>Power:</strong> 986 HP</p>
+            <p><strong>Torque:</strong> 900 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>instrument console is fixed and made up of titanimum</li>
+                    <li>8-speed longitudinal DCT</li>
+                    <li>Top speed is 300km/hr</li>
+                    <li>carbon coated rims</li>
+                    <li>Multi-function Steering Wheel</li>
+                    <li>0-100 in 3.4 seconds </li>
+                    <li>Power steering</li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('lamborghini sian', 25000)">Add to Cart</button>
+        </div>
+    </div>
+
+<!--lamborgini urus-->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/urus/lu5.png" alt="urus">
+        <div class="model-details">
+            <h2>Lamborgini urus performance</h2>
+            <p><strong>Price:</strong> $49.8 million </p>
+            <p><strong>Engine Type:</strong>4.0-liter V8 twin-turbocharged engine </p>
+            <p><strong>Power:</strong> 657 HP</p>
+            <p><strong>Torque:</strong> 816 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Top speed is 306 km/hr</li>
+                    <li>Carbon ceramic brakes </li>
+                    <li>Full body of carbon fiber</li>
+                    <li> front and rear armrests</li>
+                    <li>0 to 100 km/h in 2.4 sec</li>
+                    <li>Climate contol and digital instrument cluster</li>
+                    <li>4-wheel anti-lock brakes</li>
+                    <li>ambient lighting, powered tailgate, drive modes, cruise control, 360 degree camera, and sunroof </li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('lamborgini urus', 25000)">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Lamborghinisssss Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducati Model Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Ducati.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ducati bike - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ducati diavel v4-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/DiavelV4/dd4.png" alt="Diavel V4">
+            <div class="model-details">
+                <h2>Ducati Diavel V4</h2>
+                <p><strong>Price:</strong> $26695</p>
+                <p><strong>Engine Type:</strong> 1518cc V4 Granturismo</p>
+                <p><strong>Power:</strong> 168 HP</p>
+                <p><strong>Torque:</strong> 128 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Transmission: 6-speed manual with Ducati Quick Shift (DQS)</li>
+                        <li>Suspension: front: Fully adjustable 50 mm USD fork   rear: Fully adjustable monoshock</li>
+                        <li>Controls: Multi-functional switchgear with riding mode selector</li>
+                        <li>Drive System: Chain drive</li>
+                        <li>0-100 in 3 seconds </li>
+                        <li>Top speed is 270 km/hr </li>
+                        <li>Frame Material: Tubular steel frame with bolted rear frame</li>
+                        <li>Seat Type: Low, wide seat designed for rider and passenger comfort</li>
+                        <li>Lighting: Full LED lighting with daytime running lights (DRL)</li>
+                        <li>Bodywork: Muscular design with exposed engine elements, available in various color schemes</li>
+                        <li>Traction control: Ducati Traction Control (DTC)</li>
+                        <li>Riding models:Sport, Touring, Urban, Wet</li>
+                        <li>ABS: Bosch Cornering ABS with Ducati Safety Pack (DSP)</li> 
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Ducati diavel V4', $26695)">Add to Cart</button>
+            </div>
+        </div>
+<!--ducati monster 30 anniversario-->
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/Monster30anniversario/ann1.png" alt="Monster 30 anniversario">
+                <div class="model-details">
+                    <h2>ducati monster 30 anniversario</h2>
+                    <p><strong>Price:</strong> $19995</p>
+                    <p><strong>Engine Type:</strong> 937 ccTestastretta 11° L-Twin</p>
+                    <p><strong>Power:</strong> 111 HP</p>
+                    <p><strong>Torque:</strong> 93 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Top speed is 230 km/hr</li>
+                            <li>0-100 in 3.5 seconds </li>
+                            <li>Transmission: 6-speed manual with Ducati Quick Shift (DQS) up/down</li>
+                            <li>Suspension: Front: Fully adjustable 43 mm Öhlins NIX30 USD forks Rear: Fully adjustable Öhlins monoshock</li>
+                            <li>Seat Type: Dual seat with exclusive “30th Anniversary” logo</li>
+                            <li>Instrument Cluster: 4.3-inch TFT color display with Ducati Multimedia System (DMS)</li>
+                            <li>Lighting: Full LED lighting system (headlight, taillight, indicators)</li>
+                            <li>Frame Material: Aluminum front frame inspired by the Panigale V4</li>
+                            <li>Bodywork: Exclusive “Tricolore” livery celebrating 30 years of the Monster, with gold-colored wheels and other special details</li>
+                            <li>Storage: Minimal, designed for sport-riding</li>
+                            <li>raction Control: Ducati Traction Control (DTC) EVO Riding Modes:Sport, Touring, Urban ABS:Bosch Cornering ABS EVO</li>
+                            <li>Special feature Adjustable Suspension,Quick Shifter, Steering Damper</li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Ducati Monster 30 anniversario', $19995)">Add to Cart</button>
+                </div>
+            </div>
+<!--ducati night shift-->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/NightShift/ns1.png" alt="night shift">
+                    <div class="model-details">
+                        <h2>Ducati night shift</h2>
+                        <p><strong>Price:</strong> $12500</p>
+                        <p><strong>Engine Type:</strong>803 cc L-twin, Desmodromic distribution, air-cooled engine</p>
+                        <p><strong>Power:</strong> 73 HP</p>
+                        <p><strong>Torque:</strong> 49 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Top speed is 300 km/hr</li>
+                                <li>0-100 in 3.1 seconds </li>
+                                <li>Frame Material: Tubular steel Trellis frame</li>
+                                <li>Transmission: 6-speed manual gearbox with a wet multi-plate clutch</li>
+                                <li>Suspension:Front: Kayaba 41 mm USD fork Rear: Dual shock absorbers with adjustable preload</li>
+                                <li>Seating: Flat seat design, 31.4 inches (798 mm) seat height, suitable for a variety of riding positions</li>
+                                <li>Instrument Cluster: LCD display with digital readouts, speedometer, tachometer, gear indicator, fuel level</li>
+                                <li>Lighting: Full LED headlights, taillights, and indicators</li>
+                                <li>Bodywork: Minimalist, café racer-inspired design with a dark, stealthy appearance</li>
+                                <li>Storage: Limited under-seat storage, typical for a café racer style bike</li>
+                                <li>Traction Control: Not equipped with advanced traction control; designed for classic riding experience</li> 
+                                <li>Riding Modes: Generally, focuses on a straightforward, raw riding feel</li>
+                                <li>ABS: Standard feature for both front and rear brakes</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Ducati night shift', $12500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!--Ducati panigale V4 R -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/PanigaleV4r/v4r.png" alt="Panigale V4 R">
+                    <div class="model-details">
+                        <h2>Ducati Panigalen V4 R</h2>
+                        <p><strong>Price:</strong> $44995</p>
+                        <p><strong>Engine Type:</strong>998 cc Desmosedici Stradale R, 90° V4</p>
+                        <p><strong>Power:</strong> 218 HP</p>
+                        <p><strong>Torque:</strong> 112 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Top speed is 299 km/hr</li>
+                                <li>0-100 in 3.1 seconds </li>
+                                <li>Frame Material: Aluminum alloy front frame derived from MotoGP technology</li>
+                                <li>Transmission: 6-speed gearbox with Ducati Quick Shift (DQS) up/down Evo</li>
+                                <li>Suspension: Front: Öhlins pressurized fork, TiN treated Rear: Öhlins adjustable shock, electronic damper</li>
+                                <li>Seating: Single-seat configuration, designed for maximum rider ergonomics and control in track settings</li>
+                                <li>Instrument Cluster: TFT display with connectivity, lap timer, riding information</li>
+                                <li>Lighting: LED headlights, aggressive, sleek design.</li>
+                                <li>Bodywork: Carbon winglets, racing fairing, lightweight, optimized airflow</li>
+                                <li>Storage: Minimal storage, typical for track-focused superbikes</li>
+                                <li>Traction Control:Ducati Traction Control (DTC) EVO 2</li> 
+                                <li>Riding Modes: 3 customizable riding modes (Race, Sport, Street)</li>
+                                <li>ABS: Cornering ABS for enhanced safety and stability</li>
+                                <li>Aerodynamics: Advanced winglets for downforce and high-speed stability</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Ducati panigale V4 R', $44995)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Ducati super sport 950 -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/Supersp[ort950/ss9501.png" alt="super sport 950">
+                    <div class="model-details">
+                        <h2>Ducati Super Sport 950</h2>
+                        <p><strong>Price:</strong> $15095</p>
+                        <p><strong>Engine Type:</strong> 937 cc Testastretta 11°, L-Twin, liquid-cooled </p>
+                        <p><strong>Power:</strong> 81 HP</p>
+                        <p><strong>Torque:</strong> 93 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Top speed is 240 km/hr</li>
+                                <li>0-100 in 3.5 seconds </li>
+                                <li>Transmission: 6 -speed gearbox</li>
+                                <li>Frame Material:Tubular steel Trellis frame attached to the cylinder heads</li>
+                                <li>Suspension: Front: 43 mm Marzocchi fully adjustable USD fork Rear: Sachs monoshock, adjustable preload and rebound damping</li>
+                                <li>Seating: Single-seat configuration, designed for maximum rider ergonomics and control in track settings</li>
+                                <li>Instrument Cluster: 4.3-inch TFT display, customizable digital interface</li>
+                                <li>Lighting: ull LED headlight and taillight for better visibility and modern appearance</li>
+                                <li>Bodywork: Sporty fairing, wind protection, aggressive Ducati styling</li>
+                                <li>Storage: Limited storage under the seat, suitable for small items, typical for sport-touring motorcycles</li>
+                                <li>Traction Control: Ducati Traction Control (DTC) EVO, adjustable for different levels of intervention</li> 
+                                <li>Riding Modes: 3 riding modes (Sport, Touring, Urban)</li>
+                                <li>ABS: Standard Bosch Cornering ABS for improved safety during cornering</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Ducati Super Sport 950', $15095)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <p>&copy; 2024 Bike Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

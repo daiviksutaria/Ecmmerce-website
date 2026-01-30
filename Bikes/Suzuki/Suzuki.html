@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Model Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Suzuki.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Suzuki bike - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--  suzuki gixxer SF-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/390Duke/390duke1.png" alt=" suzuki gixxersf">
+            <div class="model-details">
+                <h2> suzuki gixxersf</h2>
+                <p><strong>Price:</strong> $6000</p>
+                <p><strong>Engine Type:</strong>73 cc, liquid-cooled, 4-stroke, DOHC, single-cylinder engine</p>
+                <p><strong>Power:</strong> 18 HP</p>
+                <p><strong>Torque:</strong> 14 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0-100 in 10 seconds </li>
+                        <li>Top speed is 130 km/hr </li>
+                        <li>Transmission:6-speed constant mesh</li>
+                        <li>Suspension: front: Telescopic, oil-damped   rear: Mono-shock, swingarm</li>
+                        <li>Controls: ABS, traction control, and easy start system</li>
+                        <li>Frame Material in this model is Steel </li>
+                        <li>Seat Type: Ergonomic, with a comfortable seat for both rider and passenger</li>
+                        <li>Lighting: LED headlight and taillight for visibility</li>
+                        <li>Bodywork: Fairing design for aerodynamic performance and style</li>
+                        <li>Traction control: Not available in all models</li>
+                        <li>Riding models: Standard riding mode, with some models offering eco or sport modes</li>
+                        <li>ABS: Available in some versions, depending on the market and model year</li> 
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Suzuki GIXXERSF', $6000)">Add to Cart</button>
+            </div>
+        </div>
+<!--suzuki gixxer SF 250-->
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Suzuki/gixxerSF20/sf1.png" alt="suzuki gixxer SF 250">
+                <div class="model-details">
+                    <h2>suzuki gixxer SF 250</h2>
+                    <p><strong>Price:</strong> $5200</p>
+                    <p><strong>Engine Type:</strong>249cc, single-cylinder, oil-cooled, four-stroke, SOHC engine</p>
+                    <p><strong>Power:</strong> 35 HP</p>
+                    <p><strong>Torque:</strong> 22.2 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            
+                            <li>0-100 in 9.5 seconds </li>
+                            <li>Top speed is 250 km/hr </li>
+                            <li>Transmission: 6-speed constant mesh</li>
+                            <li>Suspension: front: Telescopic, oil-damped   rear: Mono-shock, swingarm</li>
+                            <li>Controls: Responsive handling with precise steering feedback.</li>
+                            <li>Frame Material: Sporty, single-piece seat for comfortable rides</li>
+                            <li>Seat Type: Luxurious, ergonomic seat with high-quality materials</li>
+                            <li>Lighting: LED headlight and taillight for visibility</li>
+                            <li>Bodywork: Streamlined design with aerodynamic fairings</li>
+                            <li>Storage: Minimal storage; suitable for small essentials</li>
+                            <li>Traction control:No traction control; rider-focused experience</li>
+                            <li>Riding models: No riding modes; straightforward riding dynamics</li>
+                            <li>ABS: Standard ABS for safe braking performance</li> 
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('suzuki gixxer SF 250', $5200)">Add to Cart</button>
+                </div>
+            </div>
+<!--ktm rc 390 -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/Rc390/rc1.png" alt="RC 390">
+                    <div class="model-details">
+                        <h2>KTM RC 390</h2>
+                        <p><strong>Price:</strong> $8000</p>
+                        <p><strong>Engine Type:</strong>373 cc, liquid-cooled, 4-stroke, DOHC, single-cylinder engine </p>
+                        <p><strong>Power:</strong> 43 HP</p>
+                        <p><strong>Torque:</strong> 37 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 5.5 seconds </li>
+                                <li>Top speed is 160 km/hr </li>
+                                <li>Transmission:  6-speed, return shift</li>
+                                <li>Suspension: front: 43 mm WP Apex fork, fully adjustable  rear: WP Apex shock, adjustable for preload, rebound</li>
+                                <li>Controls: Rider aids include traction control and ABS</li>
+                                <li>Frame Material: High-tensile steel trellis frame for rigidity</li>
+                                <li>Seat Type: Sporty seat, race-inspired, supports high-speed riding</li>
+                                <li>Lighting: Full LED lights for modern styling, visibility</li>
+                                <li>Bodywork: Aggressive fairings, streamlined, aerodynamic front end</li>
+                                <li>Storage: Minimal storage; performance-focused with limited space</li>
+                                <li>Traction control: No advanced traction control; sport-oriented experience</li>
+                                <li>Riding models: No multiple modes; </li>
+                                <li>ABS: Standard Bosch ABS for safe and controlled braking</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Kawasaki Z650', $8000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Suzuki GSX 8 R-->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Suzuki/gsx8R/8r1.png" alt="Suzuki GSX 8 R">
+                    <div class="model-details">
+                        <h2>Suzuki GSX 8 R</h2>
+                        <p><strong>Price:</strong> $17000</p>
+                        <p><strong>Engine Type:</strong>2.5-liter, turbocharged inline-five engine </p>
+                        <p><strong>Power:</strong> 523 HP</p>
+                        <p><strong>Torque:</strong> 700 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 3.4 seconds </li>
+                                <li>Top speed is 300 km/hr </li>
+                                <li>Transmission:  7-speed dual-clutch transmission (DCT)</li>
+                                <li>Instrument cluster: Digital display with telemetry, customizable for performance metrics</li>
+                                <li>Seating congiguration: Two-seater with a low, sports-oriented driving position</li>
+                                <li>Controls:Ride-by-wire throttle with multiple riding modes</li>
+                                <li>Frame Material: Steel frame with lightweight aluminum swingarm</li>
+                                <li>Seat Type: Split seat with comfortable, sporty design</li>
+                                <li>Lighting: Full LED lighting for improved visibility</li>
+                                <li>Bodywork: Aerodynamic fairings with sporty, aggressive styling</li>
+                                <li>Storage: Minimal storage, suitable for essential items</li>
+                                <li>Traction control: Advanced traction control with adjustable settings.</li>
+                                <li>Riding models:Three riding modes: Sport, Road, Rain..</li>
+                                <li>ABS: Bosch ABS for enhanced braking performance</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Suzuki GSX 8 R', $17000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Suzuki Katana -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Suzuki/katana/sk1.png" alt="Suzuki katana">
+                    <div class="model-details">
+                        <h2>Suzuki Katana </h2>
+                        <p><strong>Price:</strong> $14500</p>
+                        <p><strong>Engine Type:</strong>2.5-liter, turbocharged inline-five engine </p>
+                        <p><strong>Power:</strong> 112 HP</p>
+                        <p><strong>Torque:</strong> 106 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 3.5 seconds </li>
+                                <li>Top speed is 240 km/hr </li>
+                                <li>Transmission: 6-speed constant mesh</li>
+                                <li>Instrument cluster: Digital LCD display with customizable settings</li>
+                                <li>Controls: Easy-to-reach handlebars with responsive controls</li>
+                                <li>Frame Material: Aluminum frame for strength and lightness.</li>
+                                <li>Seat Type: Comfortable, two-piece seat for long rides</li>
+                                <li>Lighting: Full LED lighting for visibility and style</li>
+                                <li>Bodywork: Sleek, retro-inspired fairing with modern design</li>
+                                <li>Storage: Minimal storage, focused on essential items</li>
+                                <li>Traction control: Multi-level traction control for enhanced safety</li>
+                                <li>Riding models: "Selectable riding modes for different conditions</li>
+                                <li>ABS: Standard ABS for reliable braking performance</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Suzuki Katana', $14500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <p>&copy; 2024 Bike Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

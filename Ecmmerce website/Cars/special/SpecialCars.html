@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Cars</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('images/background/Ferrari-FXX-K-Evo-Blue.png'); /* Use a relative path */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Special Cars</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Mercedes AMG one -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/Amgoner/ma1.png" alt="AMG One"> <!-- Use a relative path -->
+            <div class="model-details">
+                <h2>Mercedes AMG One</h2>
+                <p><strong>Price:</strong> $220 million</p>
+                <p><strong>Engine Type:</strong> 1.6-liter turbocharged V6 engine with four electric motors</p>
+                <p><strong>Power:</strong> 1063 HP</p>
+                <p><strong>Torque:</strong> 850 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Top speed is 352 km/hr</li>
+                        <li>0 - 100 in 2.9 seconds</li>
+                        <li>All-Wheel Drive (AWD)</li>
+                        <li>Instrument Cluster: Fully digital display with performance metrics</li>
+                        <li>Control: Multi-function steering wheel with paddle shifters</li>
+                        <li>Frame Material: Carbon fiber monocoque for lightweight strength</li>
+                        <li>Seat Type: Racing bucket seats for enhanced support</li>
+                        <li>Lighting: LED headlights and taillights for visibility</li>
+                        <li>Bodywork: Carbon fiber panels with aerodynamic design</li>
+                        <li>Storage: Limited storage, focused on performance essentials</li>
+                        <li>Chassis: Lightweight carbon fiber structure for agility</li>
+                        <li>Aerodynamics: Active aero elements for optimized downforce</li>
+                        <li>Interior Main Features: Minimalist design with high-tech interface</li>
+                        <li>Hybrid Technology and Efficiency: Plug-in hybrid with exceptional fuel efficiency</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Mercedes AMG One', 220000000)">Add to Cart</button>
+            </div>
+        </div>
+
+<!-- Bentley Flying Spur -->
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/BentleyFlyingSpur/bfs1.png" alt="Flying Spur"> <!-- Use a relative path -->
+            <div class="model-details">
+                <h2>Bentley Flying Spur</h2>
+                <p><strong>Price:</strong> $76 million</p>
+                <p><strong>Engine Type:</strong> 6.0-liter W12 Twin-Turbocharged Engine</p>
+                <p><strong>Power:</strong> 626 HP</p>
+                <p><strong>Torque:</strong> 900 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Top speed is 333 km/hr</li>
+                        <li>0 - 100 in 3.7 seconds</li>
+                        <li>All-Wheel Drive (AWD)</li>
+                        <li>Instrument Cluster: Digital display with customizable driving information</li>
+                        <li>Control: Advanced driver assistance systems for safety</li>
+                        <li>Frame Material: High-strength aluminum and steel construction</li>
+                        <li>Seat Type: Luxurious leather seats with massage function</li>
+                        <li>Lighting: Matrix LED headlights for enhanced visibility</li>
+                        <li>Bodywork: Sleek, aerodynamic design with premium materials</li>
+                        <li>Storage: Spacious trunk with additional interior compartments</li>
+                        <li>Chassis: Adaptive suspension for smooth and dynamic handling</li>
+                        <li>Aerodynamics: Active aero components for optimized airflow</li>
+                        <li>Interior Main Features: High-end finishes, touchscreen infotainment, bespoke options</li>
+                        <li>Hybrid Technology and Efficiency: No hybrid technology, fuel-efficient engine design</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Bentley Flying Spur', 76000000)">Add to Cart</button>
+            </div>
+        </div>
+
+<!--Bugatti La Voiture Noire -->
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/BuaggtiLaVoitureNoire/BLVN1.png" alt="Bugatti La Voiture Noire"> <!-- Use a relative path -->
+            <div class="model-details">
+                <h2>Bugatti La Voiture Noire</h2>
+                <p><strong>Price:</strong> $1.3 billion</p>
+                <p><strong>Engine Type:</strong>8.0-liter quad-turbo W16 engine</p>
+                <p><strong>Power:</strong> 1500 HP</p>
+                <p><strong>Torque:</strong> 1600 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0 – 100 in 2.4 seconds</li>
+                        <li>Top speed is 420 km/hr</li>
+                        <li>All-Wheel Drive (AWD)</li>
+                        <li>Instrument Cluster: Digital display with customizable performance metrics</li>
+                        <li>Control: Precision controls for ultimate driver engagement</li>
+                        <li>Frame Material: Carbon fiber monocoque for lightweight strength</li>
+                        <li>Seat Type: Luxurious leather sports seats with adjustability</li>
+                        <li>Lighting: LED headlights and taillights for visibility</li>
+                        <li>Bodywork: Sleek, aerodynamic carbon fiber body panels</li>
+                        <li>Storage: Limited space, designed for luxury essentials</li>
+                        <li>Chassis: Rigid carbon fiber chassis for performance</li>
+                        <li>Aerodynamics: "ctive aero elements for optimized downforce</li>
+                        <li>Interior Main Features: High-end materials, bespoke customization options available</li>
+                        <li>Hybrid Technology and Efficiency: No hybrid; focus on pure combustion power</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Buaggti La Voiture Noire', 130000000)">Add to Cart</button>
+            </div>
+        </div>
+<!--Dodge Challenmger Srt Demon 170 -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/DodgeChallenmgerSrtDemon170/de1.png" alt="Dodge Challenmger Srt Demon 170"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Dodge Challenmger Srt Demon 170</h2>
+        <p><strong>Price:</strong> $22 million</p>
+        <p><strong>Engine Type:</strong>6.2-liter supercharged HEMI V8 engine</p>
+        <p><strong>Power:</strong> 1025 HP</p>
+        <p><strong>Torque:</strong> 945 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.4 seconds</li>
+                <li>Top speed is 420 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with performance-oriented driver information</li>
+                <li>Control: Performance-focused controls for maximum driving precision</li>
+                <li>Frame Material: High-strength steel frame for enhanced durability</li>
+                <li>Seat Type: Sports bucket seats with Alcantara and leather</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Aggressive design with wide-body stance</li>
+                <li>Storage: Ample trunk space for a muscle car</li>
+                <li>Chassis: Reinforced chassis tuned for drag racing</li>
+                <li>Aerodynamics: Aerodynamic enhancements for reduced drag, improved stability</li>
+                <li>Interior Main Features: Driver-focused cockpit with performance-enhancing features</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; V8 engine prioritizes raw power</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Dodge Challenmger Srt Demon 170', 22000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Ferrari SF 90 XX Stadle -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/FerrariSF90XXStadle/fsf1.png" alt="Ferrari SF 90 XX Stadle"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Ferrari SF 90 XX Stadle</h2>
+        <p><strong>Price:</strong> $75 million</p>
+        <p><strong>Engine Type:</strong>A twin-turbocharged 4.0-liter V-8 engine with plug-in hybrid electric vehicle and three electric motors</p>
+        <p><strong>Power:</strong> 786 HP</p>
+        <p><strong>Torque:</strong> 593 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.4 seconds</li>
+                <li>Top speed is 420 km/hr</li>
+                <li>All-Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Advanced digital display with performance telemetry data</li>
+                <li>Control: Sophisticated controls for high-performance driving.</li>
+                <li>Frame Material: ightweight aluminum and carbon fiber construction</li>
+                <li>Seat Type: Racing-inspired seats with Alcantara upholstery</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Aerodynamic carbon fiber body with aggressive styling</li>
+                <li>Storage: Minimal storage, focused on driving performance</li>
+                <li>Chassis: Carbon fiber chassis for rigidity and lightness</li>
+                <li>Aerodynamics: Active aerodynamics for maximum downforce</li>
+                <li>Interior Main Features: Luxurious materials, minimalist design, driver-focused</li>
+                <li>Hybrid Technology and Efficiency: Plug-in hybrid system for efficiency and power</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Ferrari SF 90 XX Stadle', 75000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Koenigsegg One -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/KoenigseggOne!/ko2.png" alt="Koenigsegg One"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Koenigsegg One</h2>
+        <p><strong>Price:</strong> $75 million</p>
+        <p><strong>Engine Type:</strong>A twin-turbocharged 4.0-liter V-8 engine with plug-in hybrid electric vehicle and three electric motors</p>
+        <p><strong>Power:</strong> 786 HP</p>
+        <p><strong>Torque:</strong> 593 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.4 seconds</li>
+                <li>Top speed is 420 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with performance and telemetry data</li>
+                <li>Control: dvanced control systems for precise handling</li>
+                <li>Frame Material: arbon fiber monocoque for lightweight rigidity</li>
+                <li>Seat Type: Racing bucket seats with minimal cushioning</li>
+                <li>Lighting: ED headlights and taillights, modern design</li>
+                <li>Bodywork: Carbon fiber body, aerodynamically optimized shape</li>
+                <li>Storage: Limited space, focused on weight reduction</li>
+                <li>Chassis: Carbon fiber chassis for exceptional strength</li>
+                <li>Aerodynamics: Active aero, adjustable rear wing for downforce</li>
+                <li>Interior Main Features: Minimalistic, driver-focused, high-tech materials</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; pure internal combustion engine</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Koenigsegg One', 75000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Pagani Zonda HP Barchetta -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/PaganiZondaHPBarchetta/pz1.png" alt="Pagani Zonda HP Barchetta"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Pagani Zonda HP Barchetta</h2>
+        <p><strong>Price:</strong> $75 million</p>
+        <p><strong>Engine Type:</strong>7.3 liter, naturally aspirated, Mercedes-AMG V12 engine</p>
+        <p><strong>Power:</strong> 789 HP</p>
+        <p><strong>Torque:</strong> 850 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.4 seconds</li>
+                <li>Top speed is 420 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Analog and digital display with performance data</li>
+                <li>Control: Manual transmission and precision driver controls</li>
+                <li>Frame Material: Carbon-titanium monocoque for exceptional strength</li>
+                <li>Seat Type: Race-inspired carbon fiber bucket seats</li>
+                <li>Lighting: LED headlights and distinctive, aggressive styling</li>
+                <li>Bodywork: Aerodynamic carbon fiber with open rear wheel</li>
+                <li>Storage: Minimal storage space, focused on performance</li>
+                <li>Chassis: Carbon-titanium chassis for lightweight and rigidity</li>
+                <li>Aerodynamics: Active aerodynamics with rear wing for downforce</li>
+                <li>Interior Main Features: Bespoke materials, advanced technology, and luxury</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; purely high-performance combustion engine</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Pagani Zonda HP Barchetta', 75000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Maserati MC 20 icoona -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/Maserati/Mc20icoona/mc1.png" alt="Maserati MC 20 Icoona"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Maserati MC 20 Icoona</h2>
+        <p><strong>Price:</strong> $40 million</p>
+        <p><strong>Engine Type:</strong>3.0 liter, twin-turbocharged, 90° V6 engine</p>
+        <p><strong>Power:</strong> 630 HP</p>
+        <p><strong>Torque:</strong> 730 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.9 seconds</li>
+                <li>Top speed is 325 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with advanced performance metrics</li>
+                <li>Control: Driver-focused controls for precise handling and feedback.</li>
+                <li>Frame Material: Carbon fiber monocoque for lightweight rigidity</li>
+                <li>Seat Type: Sporty leather seats with adjustability options.</li>
+                <li>Lighting: LED headlights and taillights for modern styling</li>
+                <li>Bodywork: Sculpted carbon fiber panels with aerodynamic design</li>
+                <li>Storage: Limited space; designed for performance driving</li>
+                <li>Chassis: Carbon fiber chassis for exceptional performance</li>
+                <li>Aerodynamics: Active aero elements for improved stability</li>
+                <li>Interior Main Features: Luxurious materials, advanced infotainment, customizable options</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; pure internal combustion engine</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Maserati MC 20 Icoona', 40000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Maserati MC 20 Leggenda -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/Maserati/mc20Leggenda/ml1.png" alt="Maserati MC 20 Leggenda"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Maserati MC 20 Leggenda</h2>
+        <p><strong>Price:</strong> $52 million</p>
+        <p><strong>Engine Type:</strong>3.0 liter V6 90° twin-turbocharged Maserati Nettuno engine</p>
+        <p><strong>Power:</strong> 621 HP</p>
+        <p><strong>Torque:</strong> 730 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.9 seconds</li>
+                <li>Top speed is 325 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with customizable driving information</li>
+                <li>Control: Carbon fiber monocoque for lightweight rigidity</li>
+                <li>Frame Material: Carbon-titanium monocoque for exceptional strength</li>
+                <li>Seat Type: Sporty leather seats with ergonomic design</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Sculpted aerodynamic body with carbon fiber</li>
+                <li>Storage: Limited trunk space, focused on performance</li>
+                <li>Chassis: Lightweight carbon fiber chassis for agility</li>
+                <li>Aerodynamics: Active aero elements for enhanced downforce</li>
+                <li>Interior Main Features: Premium materials, modern infotainment system</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; pure gasoline engine performance</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Maserati MC 20 Leggenda', 52000000)">Add to Cart</button>
+    </div>
+</div>
+<!--Mclren Slous -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/Mclren/Slous/ms1.png" alt="Mclren Slous"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Mclren Slous</h2>
+        <p><strong>Price:</strong> $283.6 million</p>
+        <p><strong>Engine Type:</strong>5.2 liter V10 engine</p>
+        <p><strong>Power:</strong> 829 HP</p>
+        <p><strong>Torque:</strong> 650 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.5 seconds</li>
+                <li>Top speed is 322 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with performance-focused metrics</li>
+                <li>Control: Advanced controls for precise handling and feedback</li>
+                <li>Frame Material: Carbon fiber monocoque for lightweight strength</li>
+                <li>Seat Type: Race-inspired, adjustable leather sports seats</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Aerodynamic carbon fiber panels with aggressive styling</li>
+                <li>Storage: Minimal storage, designed for performance focus</li>
+                <li>Chassis: Rigid carbon fiber chassis for handling precision</li>
+                <li>Aerodynamics: Active aero components for optimized downforce</li>
+                <li>Interior Main Features: Luxurious, customizable interior with high-tech elements</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; high-performance combustion engine</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Mclren Slous', 283600000)">Add to Cart</button>
+    </div>
+</div>
+<!--Mclren Speedtail -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/Mclren/speedtail/msp2.png" alt="Mclren Speedtail"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Mclren Speedtail</h2>
+        <p><strong>Price:</strong> $164.8 million</p>
+        <p><strong>Engine Type:</strong>4.0 liter twin-turbocharged V8 engine</p>
+        <p><strong>Power:</strong> 1036 HP</p>
+        <p><strong>Torque:</strong> 1150 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.9 seconds</li>
+                <li>Top speed is 403 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with advanced performance metrics</li>
+                <li>Control: Advanced controls for dynamic driving experience</li>
+                <li>Frame Material: Carbon fiber monocoque for lightweight strength</li>
+                <li>Seat Type: Luxurious leather seats with ergonomic design</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Streamlined carbon fiber body with aerodynamic design</li>
+                <li>Storage: Minimal storage; focus on performance design</li>
+                <li>Chassis: Carbon fiber chassis for improved rigidity</li>
+                <li>Aerodynamics: Active aero features for enhanced downforce</li>
+                <li>Interior Main Features: High-tech, customizable interior with luxury finishes</li>
+                <li>Hybrid Technology and Efficiency: Hybrid system; efficient yet high-performance capabilities</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Mclren Speedtail', 164800000)">Add to Cart</button>
+    </div>
+</div>
+<!--Aston martin Valkyrie AMR Pro -->
+<div class="model">
+    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/ValkyrieA,mrPro/asvap1.png" alt="Aston martin Valkyrie AMR Pro"> <!-- Use a relative path -->
+    <div class="model-details">
+        <h2>Aston martin Valkyrie AMR Pro</h2>
+        <p><strong>Price:</strong> $20 million</p>
+        <p><strong>Engine Type:</strong>6.5-litre naturally-aspirated V12 engine</p>
+        <p><strong>Power:</strong> 1000 HP</p>
+        <p><strong>Torque:</strong> 546 Nm</p>
+        <div class="features">
+            <h3>Features:</h3>
+            <ul>
+                <li>0 – 100 in 2.4 seconds</li>
+                <li>Top speed is 402 km/hr</li>
+                <li>Rear Wheel Drive (AWD)</li>
+                <li>Instrument Cluster: Digital display with race-focused telemetry</li>
+                <li>Control: Advanced controls for precise, high-performance driving</li>
+                <li>Frame Material: Carbon fiber monocoque for maximum rigidity</li>
+                <li>Seat Type: Race-inspired bucket seats with harnesses</li>
+                <li>Lighting: LED headlights and taillights for visibility</li>
+                <li>Bodywork: Aerodynamic carbon fiber panels with aggressive styling</li>
+                <li>Storage: Minimal storage, designed for racing focus</li>
+                <li>Chassis: Lightweight carbon fiber chassis for agility</li>
+                <li>Aerodynamics: Active aero components for exceptional downforce</li>
+                <li>Interior Main Features: Track-focused interior with advanced control systems</li>
+                <li>Hybrid Technology and Efficiency: No hybrid; high-performance naturally aspirated V12</li>
+            </ul>
+        </div>
+        <button class="add-to-cart" onclick="addToCart('Aston martin Valkyrie AMR Pro', 20000000)">Add to Cart</button>
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2024 Special Cars. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            let cartCount = parseInt(document.getElementById('cart-count').innerText);
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            alert(itemName + " has been added to your cart for $" + itemPrice);
+        }
+    </script>
+</body>
+</html>

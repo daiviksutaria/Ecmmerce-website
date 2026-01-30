@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/index.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        .category {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .category h2 {
+            margin-bottom: 10px;
+        }
+
+        .category a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .category a:hover {
+            text-decoration: underline;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .images img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Cars Section -->
+        <div class="category">
+            <h2>Cars</h2>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Buggati/Bugutti.html">Bugatti</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Ferrari/ferrari.html">Ferrari</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/koenigsegg/koenigsegg.html">Koenigsegg</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Lamborgini/lamborghini.html">Lamborghini</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Maserati/msaerati.html">Maserati</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Pagani/Pagni.html">Pagani</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/rangeRover/RangeRover.html">Range Rover</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Rolls%20Royle/RollsRoyle.html">Rolls Royce</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/special/SpecialCars.html">Special</a>
+        </div>
+
+        <!-- Bikes Section -->
+        <div class="category">
+            <h2>Bikes</h2>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/BMW/BMW.html">BMW</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ducati/duacti.html">Ducati</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Kawasaki/kawasaki.html">Kawasaki</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Ktm/KTM.html">KTM</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Suzuki/Suzuki.html">Suzuki</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/yamaha.html">Yamaha</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Special/specialBikes.html">Special</a>
+        </div>
+
+        <!-- Formula 1 Section -->
+        <div class="category">
+            <h2>Formula 1</h2>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/alpine/alpine.html">Alpine</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/AstonMartin/AstonMartin.html">Aston Martin</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Feerari/ferrari.html">Ferrari</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Haas/Haas.html">Haas</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/KickSauber/kickSaubar.html">Kicks Sauber</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Mcleren/mcleren.html">McLaren</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Mercedes/mercedes.html">Mercedes</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/VisaRb/RB.html">Visa RB</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/RedBull/redBull.html">Red Bull</a>
+            <a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1/Willians/Willians.html">Williams</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Automotive Showcase</p>
+    </footer>
+
+    <script>
+        // Example JavaScript for managing the cart
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+</html>

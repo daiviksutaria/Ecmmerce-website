@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Ferrari.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ferrari Company - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ferrari 296 GTB -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Ferrari/296gtb/fg1.png" alt="296 GTB">
+            <div class="model-details">
+                <h2>Ferrari 296 GTB </h2>
+                <p><strong>Price:</strong> $54.6 million </p>
+                <p><strong>Engine Type:</strong>2,992 cc (3.0 L) twin-turbo 120° V6 engine with a plug-in hybrid electric motor</p>
+                <p><strong>Power:</strong> 653 HP</p>
+                <p><strong>Torque:</strong> 740 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Fully digital display with customizable layouts</li>
+                        <li>Multifunctional steering wheel with touch controls</li>
+                        <li>8-speed dual-clutch transmission</li>
+                        <li>interior is made up of Leather, carbon fiber, Alcantara</li>
+                        <li>Aerodynamics: Active aero elements, front splitter, rear spoiler</li>
+                        <li>0-100 in 2.9 seconds </li>
+                        <li>Chassis: Lightweight aluminum and carbon fiber construction</li>
+                        <li>Top Speed is 330 km/hr </li>
+                        <li>Rear wheel drive</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Ferrari 296 GTB ', 546000000)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- ferrari 296 gts --> 
+             <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Ferrari/296Gts/fse1.png" alt="296 GTS ">
+                <div class="model-details">
+                    <h2>Ferrari 296 GTS</h2>
+                    <p><strong>Price:</strong> $62.4 million </p>
+                    <p><strong>Engine Type:</strong>2,992 cc (3.0 L) twin-turbo 120° V6 engine with a plug-in hybrid electric motor </p>
+                    <p><strong>Power:</strong> 818 HP </p>
+                    <p><strong>Torque:</strong> 740 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Instrument Cluster: Fully digital display</li>
+                            <li>Steering: Multifunctional with haptic feedback controls</li>
+                            <li>Gearbox: 8-speed dual-clutch transmission</li>
+                            <li>Materials sued in interior are Premium leather, carbon fiber, aluminum accents</li>
+                            <li>Aerodynamics: Active aerodynamics, retractable hardtop, front diffuser</li>
+                            <li>Chassis: Aluminum and carbon fiber</li>
+                            <li>Top speed is 330 km/hr </li>
+                            <li>0-100 is 2.9 seconds</li>
+                            <li>Rear wheel drive </li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Ferrari 296 GTS', 624000000)">Add to Cart</button>
+                </div>
+            </div>
+            <!--ferrari laferrari-->
+            <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Ferrari/laferrari/fl7.png" alt="Laferrari">
+            <div class="model-details">
+                <h2>Ferrari Laferrari </h2>
+                <p><strong>Price:</strong> $71.8 million </p>
+                <p><strong>Engine Type:</strong>8.0 L quad-turbocharged W16 </p>
+                <p><strong>Power:</strong> 830 HP</p>
+                <p><strong>Torque:</strong> 740 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                       <li>Instrument Cluster: Digital display with race-inspired design</li>
+                       <li>Steering: F1-inspired multifunctional steering wheel</li>
+                       <li>Gearbox: 7-speed dual-clutch transmission</li>
+                       <li>Materials: Alcantara, carbon fiber, leather</li>
+                       <li>Aerodynamics: Advanced active aerodynamics, flat underbody, rear diffuser</li>
+                       <li>Chassis: Carbon fiber monocoque</li>
+                       <li>Rear wheel drive</li>
+                       <li>0-100 in 2.6 secnds</li>
+                       <li>Top speed is 350 km/hr </li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Laferrari', 718000000)">Add to Cart</button>
+            </div>
+        </div>
+<!--ferrari sf 90 spider -->
+<div class="container">
+    <div class="model">
+        <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/Ferrari/SF90%20spider/fs1.png" alt="">
+        <div class="model-details">
+            <h2>Bugatti tourbillon </h2>
+            <p><strong>Price:</strong> $85.5 million </p>
+            <p><strong>Engine Type:</strong>4.0L Twin-Turbocharged V8 with three electric motors</p>
+            <p><strong>Power:</strong> 986 HP</p>
+            <p><strong>Torque:</strong> 800 Nm</p>
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Materials Used: High-quality leather, Alcantara, carbon fiber, aluminum accents</li>
+                    <li>Instrument Cluster: Fully digital 16-inch HD display with customizable views.</li>
+                    <li>Steering Wheel: Multifunctional steering wheel with integrated controls, LED shift indicators, carbon fiber construction</li>
+                    <li>Gearbox: 8-speed dual-clutch automatic transmission</li>
+                    <li>Multi-function Steering Wheel</li>
+                    <li>Materials Used in Car: Carbon fiber, aluminum, and high-strength steel.</li>
+                    <li>Aerodynamics: Active aerodynamics with an adjustable rear spoiler, air intakes, and diffusers for optimized downforce and reduced drag</li>
+                    <li>0-100 in 2.5 seconds </li>
+                    <li>Top speed is 340 km/hr </li>
+                </ul>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Ferrari SF90 Spider', 855000000)">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

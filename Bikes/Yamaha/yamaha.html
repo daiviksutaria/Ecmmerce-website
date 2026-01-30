@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha Model Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Suzuki.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Yamaha bike - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Yamaha FZ FI V3 -->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/FZFIV3/v3.png" alt="Yamaha FZ FI V3">
+            <div class="model-details">
+                <h2>Yamaha FZ FI V3</h2>
+                <p><strong>Price:</strong> $6000</p>
+                <p><strong>Engine Type:</strong>149cc, air-cooled, single-cylinder, fuel-injected engine</p>
+                <p><strong>Power:</strong> 16.8 HP</p>
+                <p><strong>Torque:</strong> 13.6 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>0-100 in 12 seconds </li>
+                        <li>Top speed is 110 km/hr </li>
+                        <li>Transmission: 5-speed constant mesh</li>
+                        <li>Instrument Cluster: Digital display with speedometer, fuel gauge</li>
+                        <li>Controls: Simple handlebar controls for easy operation</li>
+                        <li>Frame Material: Diamond-type frame for rigidity and stability.</li>
+                        <li>Seat Type: Single-piece seat with sporty design, cushioning</li>
+                        <li>Lighting: LED headlight and taillight for visibility</li>
+                        <li>Storage: Minimal storage, suitable for essentials only</li>
+                        <li>Bodywork: Aggressive styling with sharp, modern design.</li>
+                        <li>Traction control: No advanced traction control, straightforward riding</li>
+                        <li>Riding models: No multiple modes, focused on standard riding</li>
+                        <li>ABS: Single-channel ABS for improved braking safety</li> 
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Yamaha FZ FI V3', $4500)">Add to Cart</button>
+            </div>
+        </div>
+<!--Yamaha FZX-->
+        <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/FZX/fx1.png" alt="Yamaha FZX">
+                <div class="model-details">
+                    <h2>Yamaha FZX</h2>
+                    <p><strong>Price:</strong> $5000</p>
+                    <p><strong>Engine Type:</strong> air-cooled 4-stroke 149cc SOHC, 2-valve, single-cylinder fuel-injected BS6 compatible engine</p>
+                    <p><strong>Power:</strong> 16.4 HP</p>
+                    <p><strong>Torque:</strong> 13.3 Nm</p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            
+                            <li>0-100 in 12 seconds </li>
+                            <li>Top speed is 110 km/hr </li>
+                            <li>Transmission: 6-speed constant mesh</li>
+                            <li>Instrument Cluster: Digital display with speedometer and indicators</li>
+                            <li>Controls: Handlebar-mounted controls for easy riding adjustments</li>
+                            <li>Frame Material: Steel frame for durability and stability.</li>
+                            <li>Seat Type: Single-piece seat with comfortable cushioning</li>
+                            <li>Lighting: LED headlight, taillight, and turn signals</li>
+                            <li>Bodywork: Sporty design with minimalistic, rugged styling</li>
+                            <li>Storage: Limited, small under-seat compartment for essentials.</li>
+                            <li>Traction control: No traction control; basic riding experience</li>
+                            <li>Riding models: No multiple modes; straightforward riding experience</li>
+                            <li>ABS: Single-channel ABS for front wheel safety</li> 
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Yamaha FZX', $5000)">Add to Cart</button>
+                </div>
+            </div>
+<!--Yamaha MT 03 -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/MT03/t031.png" alt="Yamaha MT 03">
+                    <div class="model-details">
+                        <h2>Yamaha MT 03</h2>
+                        <p><strong>Price:</strong> $5500</p>
+                        <p><strong>Engine Type:</strong>4-stroke 321cc SOHC, 4-valve, twin-cylinder fuel-injected engine</p>
+                        <p><strong>Power:</strong> 43 HP</p>
+                        <p><strong>Torque:</strong> 37 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 4.0 seconds </li>
+                                <li>Top speed is 130 km/hr </li>
+                                <li>Transmission: 6-speed, return shift</li>
+                                <li>Instrument Cluster: Digital LCD with essential riding information</li>
+                                <li>Controls:  Standard controls, easy access and responsive.</li>
+                                <li>Frame Material: Lightweight diamond-type steel frame construction.</li>
+                                <li>Seat Type: Comfortable, sporty seat for upright riding</li>
+                                <li>Lighting: LED headlights and taillights for visibility.</li>
+                                <li>Bodywork: Aggressive, naked styling with sharp lines.</li>
+                                <li>Storage: Minimal storage, designed for essentials only</li>
+                                <li>Traction control: No advanced traction control system included.</li>
+                                <li>Riding models:Lacks multiple riding modes for versatility.</li>
+                                <li>ABS: Standard ABS for safe braking performance</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Yamaha MT 03', $5500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Yamaha R3-->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/R3/r31.png" alt="Yamaha R3">
+                    <div class="model-details">
+                        <h2>Yamaha R3</h2>
+                        <p><strong>Price:</strong> $6500</p>
+                        <p><strong>Engine Type:</strong>2.5-liter, turbocharged inline-five engine </p>
+                        <p><strong>Power:</strong> 41.4 HP</p>
+                        <p><strong>Torque:</strong> 29.6 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 5.5 seconds </li>
+                                <li>Top speed is 180 km/hr </li>
+                                <li>Transmission: 6-speed constant mesh</li>
+                                <li>Instrument cluster: Digital display with telemetry, customizable for performance metrics</li>
+                                <li>Seating congiguration: Two-seater with a low, sports-oriented driving position</li>
+                                <li>Controls:Ride-by-wire throttle with multiple riding modes</li>
+                                <li>Frame Material: Steel frame with lightweight aluminum swingarm</li>
+                                <li>Seat Type: Split seat with comfortable, sporty design</li>
+                                <li>Lighting: Full LED lighting for improved visibility</li>
+                                <li>Bodywork: Aerodynamic fairings with sporty, aggressive styling</li>
+                                <li>Storage: Minimal storage, suitable for essential items</li>
+                                <li>Traction control: No advanced traction control system included</li>
+                                <li>Riding models: Lacks multiple riding modes for versatility</li>
+                                <li>ABS: Standard ABS for safe braking performance</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Yamaha R3', $6500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+<!--Yamaha YZF-R15 -->
+            <div class="container">
+                <div class="model">
+                    <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Bikes/Yamaha/R15/r15.png" alt="Yamaha YZF-R15">
+                    <div class="model-details">
+                        <h2>Yamaha YZF-R15 </h2>
+                        <p><strong>Price:</strong> $4500</p>
+                        <p><strong>Engine Type:</strong>2.5-liter, turbocharged inline-five engine </p>
+                        <p><strong>Power:</strong> 112 HP</p>
+                        <p><strong>Torque:</strong> 106 Nm</p>
+                        <div class="features">
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>0-100 in 3.5 seconds </li>
+                                <li>Top speed is 240 km/hr </li>
+                                <li>Transmission: 6-speed constant mesh</li>
+                                <li>Instrument cluster: LCD display with speedometer, tachometer, gear indicator</li>
+                                <li>Controls: Easy-to-reach handlebar controls for rider comfort</li>
+                                <li>Frame Material: Deltabox frame for rigidity and precise handling</li>
+                                <li>Seat Type: Split seat design for sporty riding posture</li>
+                                <li>Lighting: LED headlight and taillight for visibility</li>
+                                <li>Bodywork: Aerodynamic fairing for enhanced performance and style</li>
+                                <li>Storage: Minimal storage, focused on lightweight performance</li>
+                                <li>Traction control: Not equipped with traction control system</li>
+                                <li>Riding models: No riding modes; standard power delivery</li>
+                                <li>ABS: Single-channel ABS for improved braking safety</li> 
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart('Yamaha YZF-R15', $4500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        <p>&copy; 2024 Bike Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>

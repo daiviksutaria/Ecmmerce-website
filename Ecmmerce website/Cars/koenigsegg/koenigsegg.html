@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konesigegg company</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/background%20image/Konesigesegg.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .model-details {
+            flex: 2;
+        }
+
+        .model-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .model-details p {
+            margin-bottom: 10px;
+        }
+
+        .model-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .model-details ul li {
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .features h3 {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Konesigegg - Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/index/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/bikes.html">Bikes</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Formula1.html">Formula 1</a></li>
+                <li><a href="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--koenigsegg Agera RS-->
+    <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/koenigsegg/Agera%20rs/ka4.png" alt="Agera RS ">
+            <div class="model-details">
+
+                <h2>koenigsegg Agera RS</h2>
+                <p><strong>Price:</strong> $120 million </p>
+                <p><strong>Engine Type:</strong>twin-turbo, 5.0 liter V8 engine</p>
+                <p><strong>Power:</strong> 1160 HP</p>
+                <p><strong>Torque:</strong> 1280 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Interior Material: Carbon fiber, Alcantara, leather</li>
+                        <li>Instrument Cluster: Digital dashboard with configurable displays</li>
+                        <li>Steering: Carbon fiber steering wheel with paddle shifters</li>
+                        <li>Gearbox: 7-speed dual-clutch automatic with paddle shift</li>
+                        <li>Body Material: Carbon fiber with lightweight reinforced aluminum honeycomb</li>
+                        <li>Aerodynamics: Active aerodynamics, including rear wing and front splitter</li>
+                        <li>Exhaust System: Lightweight titanium exhaust system</li>
+                        <li>0–100 km/h in 2.8 seconds </li>
+                        <li>Top speed is 447 km/hr </li>
+                        <li>Rear wheel drive </li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Koenigsegg Agera RS', 120000000)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- koenigsegg jesko attack --> 
+             <div class="container">
+            <div class="model">
+                <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/koenigsegg/jesko%20attack/kj1.png" alt="Jesko Attack">
+                <div class="model-details">
+                    <h2>koenigsegg Jesko attack</h2>
+                    <p><strong>Price:</strong> $660.6 million </p>
+                    <p><strong>Engine Type:</strong> 5.0-liter twin-turbo V8 engine </p>
+                    <p><strong>Power:</strong> 1280 HP</p>
+                    <p><strong>Torque:</strong> 1500 Nm </p>
+                    <div class="features">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Instrument Cluster: Digital Instrument Cluster with a high-resolution display</li>
+                            <li>Steering: Multi-functional steering wheel with paddle shifters</li>
+                            <li>Gearbox: 9-speed Koenigsegg Light Speed Transmission (LST) with an automatic and manual mode</li>
+                            <li>Materials Used in Interior: Alcantara, carbon fiber, and leather</li>
+                            <li>Chassis: Carbon fiber monocoque with aluminum honeycomb reinforcement.</li>
+                            <li>Body: Lightweight carbon fiber with active aerodynamics</li>
+                            <li>Active Aero: Active rear wing and front flaps for dynamic downforce adjustments.</li>
+                            <li>Downforce: Capable of generating 1,400 kg of downforce at high speeds.</li>
+                            <li>Top speed is 480 km/hr</li>
+                            <li>0-100 in 2.5 seconds </li>
+                            <li>rear wheel drive</li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('koenigsegg jesko attack', 66060000000)">Add to Cart</button>
+                </div>
+            </div>
+            <!--Koenigsegg Regera -->
+            <div class="container">
+        <div class="model">
+            <img src="file:///C:/Users/daivi/OneDrive/Desktop/Daivik/Ecmmerce%20website/Cars/koenigsegg/regera/kr1.png" alt="Regera">
+            <div class="model-details">
+                <h2>Koenigsegg Regera</h2>
+                <p><strong>Price:</strong> $450.8 million </p>
+                <p><strong>Engine Type:</strong>twin-turbocharged V8 engine with a 5.0-litre engine</p>
+                <p><strong>Power:</strong> 1500 HP</p>
+                <p><strong>Torque:</strong> 2000 Nm</p>
+                <div class="features">
+                    <h3>Features:</h3>
+                    <ul>
+                       <li>Interior Material: High-quality leather and Alcantara, carbon fiber, and polished aluminum</li>
+                       <li>Instrument Cluster: Fully digital, customizable digital display</li>
+                       <li>Steering Wheel: Multi-functional steering wheel with paddle shifters, wrapped in leather and carbon fiber</li>
+                       <li>Gearbox: Koenigsegg Direct Drive (KDD) system, no traditional gearbox</li>
+                       <li>Infotainment System: Koenigsegg's proprietary system with Apple CarPlay, touchscreen interface</li>
+                       <li>Chassis and Body Material: Carbon fiber monocoque with aluminum honeycomb, carbon fiber body panels</li>
+                       <li>Aerodynamics: Active aerodynamics with a deployable rear wing, active front flaps, and rear spoiler</li>
+                       <li>Top speed is 410 km/hr</li>
+                       <li>0-100 in 2.8 seconds</li>
+                       <li>Rear wheel drive</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Koenigsegg regera', 45080000000)">Add to Cart</button>
+            </div>
+        </div>
+    <footer>
+        <p>&copy; 2024 Car Company</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " has been added to your cart.");
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+    </script>
+</body>
+
+</html>
